@@ -59,14 +59,18 @@ run_analysis <- {
 ##          rename columns (subject + activity + features**) in order to scan
 ##          columns containing (mean or std) 
 ##              ** replacing with underscores any invalid characters in variable names
-##
 ##          And then only keep the first 2 columns + columns containing "mean" or "std"
+##              but not begining with angle (not mean or std but angle measures) 
 
     colnames(main_dataset) <- c("Subject","Activity",gsub("-|\\(|\\)|,","_",features$V2))
 
     keep_keywords <- c("Subject", "Activity", "mean", "std")
-    keep_columns <- as.logical(rowSums(sapply(keep_keywords, grepl,
-                                              names(main_dataset), ignore.case=TRUE)))
+    exclude_keywords <- c("angle")
+    cols_with_keep <- as.logical(rowSums(sapply(keep_keywords, grepl,
+                                                names(main_dataset), ignore.case=TRUE)))
+    cols_with_exclude <- as.logical(rowSums(sapply(exclude_keywords, grepl,
+                                                   names(main_dataset), ignore.case=TRUE)))
+    keep_columns <- cols_with_keep & !cols_with_exclude
     main_dataset <- main_dataset[,keep_columns]
 
 ## Step 3 - Replace numeric contents in the "Activity" column of main_dataset
