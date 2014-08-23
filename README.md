@@ -15,7 +15,7 @@ Step 1
     http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 - For time and network bandwidth efficiency, if the local working directory already
     contains a copy of the original data (stored in the ./data directory), the script
-    doesn't download the file again and uses the present copy
+    doesn't download the file again and uses the local copy
 - Once the zip file is transferred and saved as "Dataset.zip"" (or is already present),
     8 files are read to construct a working data frames for each one. Files accessed
     within Dataset.zip are:
