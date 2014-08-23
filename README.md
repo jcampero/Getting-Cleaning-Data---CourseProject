@@ -11,7 +11,7 @@ Step 1
     link:
     https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 - If you would like to see a brief description of the Human Activity Recognition Using
-    Smartphones Project and how the input data was generated, refer the following link:
+    Smartphones Project and how the input data was generated, refer to the following link:
     http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 - For time and network bandwidth efficiency, if the local working directory already
     contains a copy of the original data (stored in the ./data directory), the script
