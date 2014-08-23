@@ -1,4 +1,4 @@
-Code book & Data Dictionary - Getting & Cleaning Data Course Project
+Code Book & Data Dictionary - Getting & Cleaning Data Course Project
 ====================================================================
 
 |Column|Field Name|Description|Type|Range|
