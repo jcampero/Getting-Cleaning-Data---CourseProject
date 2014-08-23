@@ -1,13 +1,13 @@
 Code book & Data Dictionary - Getting & Cleaning Data Course Project
 ====================================================================
 
-Field Name|Description|Type|Range
+|Field Name|Description|Type|Range|
+|----------|-----------|----|-----|
+|Subject|Subject|integer|[1:30]|
 
-Subject|Subject|integer|[1:30]
+|Activity|Activity labels|factor|
 
-Activity|Activity labels|factor
-
-time_BodyAcc_mean_X|Average of the mean of the time domain signal of the body acceleration in the x-axis direction|numeric|[-1:1]
+|time_BodyAcc_mean_X|Average of the mean of the time domain signal of the body acceleration in the x-axis direction|numeric|[-1:1]|
 
 time_BodyAcc_mean_Y|Average of the mean of the time domain signal of the body acceleration in the y-axis direction|numeric|[-1:1]
 
