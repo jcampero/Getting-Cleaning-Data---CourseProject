@@ -14,8 +14,8 @@ If you would like to see a brief description of the Human Activity Recognition U
 Smartphones Project and how the input data was generated, refer to the following link:
     http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-The main prourpose of the script is to extract only the mean and standard deviation
-measures from the original data and calculate the average of those measures grouped
+The main prourpose of the script is to extract **only the mean and standard deviation
+measures** from the original data and calculate the average of those measures grouped
 by subject and activity.
 
 This script performs the following 5 main steps:
