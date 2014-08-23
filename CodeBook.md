@@ -7,171 +7,87 @@ Code book & Data Dictionary - Getting & Cleaning Data Course Project
 |Activity|Activity labels|factor|
 |time_BodyAcc_mean_X|Average of the mean of the time domain signal of the body acceleration in the x-axis direction|numeric|[-1:1]|
 time_BodyAcc_mean_Y|Average of the mean of the time domain signal of the body acceleration in the y-axis direction|numeric|[-1:1]
-
 time_BodyAcc_mean_Z|Average of the mean of the time domain signal of the body acceleration in the z-axis direction|numeric|[-1:1]
-
 time_BodyAcc_std_X|Average of the standard deviation of the time domain signal of the body acceleration in the x-axis direction|numeric|[-1:1]
-
 time_BodyAcc_std_Y|Average of the standard deviation of the time domain signal of the body acceleration in the y-axis direction|numeric|[-1:1]
-
 time_BodyAcc_std_Z|Average of the standard deviation of the time domain signal of the body acceleration in the z-axis direction|numeric|[-1:1]
-
 time_GravityAcc_mean_X|Average of the mean of the time domain signal of the gravity acceleration in the x-axis direction|numeric|[-1:1]
-
 time_GravityAcc_mean_Y|Average of the mean of the time domain signal of the gravity acceleration in the y-axis direction|numeric|[-1:1]
-
 time_GravityAcc_mean_Z|Average of the mean of the time domain signal of the gravity acceleration in the z-axis direction|numeric|[-1:1]
-
 time_GravityAcc_std_X|Average of the standard deviation of the time domain signal of the gravity acceleration in the x-axis direction|numeric|[-1:1]
-
 time_GravityAcc_std_Y|Average of the standard deviation of the time domain signal of the gravity acceleration in the y-axis direction|numeric|[-1:1]
-
 time_GravityAcc_std_Z|Average of the standard deviation of the time domain signal of the gravity acceleration in the z-axis direction|numeric|[-1:1]
-
 time_BodyAccJerk_mean_X|Average of the mean of the time domain signal of the Jerk signal of the body acceleration in the x-axis direction|numeric|[-1:1]
-
 time_BodyAccJerk_mean_Y|Average of the mean of the time domain signal of the Jerk signal of the body acceleration in the y-axis direction|numeric|[-1:1]
-
 time_BodyAccJerk_mean_Z|Average of the mean of the time domain signal of the Jerk signal of the body acceleration in the z-axis direction|numeric|[-1:1]
-
 time_BodyAccJerk_std_X|Average of the standard deviation of the time domain signal of the Jerk signal of the body acceleration in the x-axis direction|numeric|[-1:1]
-
 time_BodyAccJerk_std_Y|Average of the standard deviation of the time domain signal of the Jerk signal of the body acceleration in the y-axis direction|numeric|[-1:1]
-
 time_BodyAccJerk_std_Z|Average of the standard deviation of the time domain signal of the Jerk signal of the body acceleration in the z-axis direction|numeric|[-1:1]
-
 time_BodyGyro_mean_X|Average of the mean of the time domain signal of the gyroscope in the x-axis direction|numeric|[-1:1]
-
 time_BodyGyro_mean_Y|Average of the mean of the time domain signal of the gyroscope in the y-axis direction|numeric|[-1:1]
-
 time_BodyGyro_mean_Z|Average of the mean of the time domain signal of the gyroscope in the z-axis direction|numeric|[-1:1]
-
 time_BodyGyro_std_X|Average of the standard deviation of the time domain signal of the gyroscope in the x-axis direction|numeric|[-1:1]
-
 time_BodyGyro_std_Y|Average of the standard deviation of the time domain signal of the gyroscope in the y-axis direction|numeric|[-1:1]
-
 time_BodyGyro_std_Z|Average of the standard deviation of the time domain signal of the gyroscope in the z-axis direction|numeric|[-1:1]
-
 time_BodyGyroJerk_mean_X|Average of the mean of the time domain signal of the Jerk signal of the gyroscope in the x-axis direction|numeric|[-1:1]
-
 time_BodyGyroJerk_mean_Y|Average of the mean of the time domain signal of the Jerk signal of the gyroscope in the y-axis direction|numeric|[-1:1]
-
 time_BodyGyroJerk_mean_Z|Average of the mean of the time domain signal of the Jerk signal of the gyroscope in the z-axis direction|numeric|[-1:1]
-
 time_BodyGyroJerk_std_X|Average of the standard deviation of the time domain signal of the Jerk signal of the gyroscope in the x-axis direction|numeric|[-1:1]
-
 time_BodyGyroJerk_std_Y|Average of the standard deviation of the time domain signal of the Jerk signal of the gyroscope in the y-axis direction|numeric|[-1:1]
-
 time_BodyGyroJerk_std_Z|Average of the standard deviation of the time domain signal of the Jerk signal of the gyroscope in the z-axis direction|numeric|[-1:1]
-
 time_BodyAccMag_mean|Average of the mean of the time domain signal of the magnitude of the body acceleration|numeric|[-1:1]
-
 time_BodyAccMag_std|Average of the standard deviation of the time domain signal of the magnitude of the body acceleration|numeric|[-1:1]
-
 time_GravityAccMag_mean|Average of the mean of the time domain signal of the magnitude of the gravity acceleration|numeric|[-1:1]
-
 time_GravityAccMag_std|Average of the standard deviation of the time domain signal of the magnitude of the gravity acceleration|numeric|[-1:1]
-
 time_BodyAccJerkMag_mean|Average of the mean of the time domain signal of the magnitude of the Jerk signal of the body acceleration|numeric|[-1:1]
-
 time_BodyAccJerkMag_std|Average of the standard deviation of the time domain signal of the magnitude of the Jerk signal of the body acceleration|numeric|[-1:1]
-
 time_BodyGyroMag_mean|Average of the mean of the time domain signal of the magnitude of the gyroscope|numeric|[-1:1]
-
 time_BodyGyroMag_std|Average of the standard deviation of the time domain signal of the magnitude of the gyroscope|numeric|[-1:1]
-
 time_BodyGyroJerkMag_mean|Average of the mean of the time domain signal of the magnitude of the Jerk signal of the gyroscope|numeric|[-1:1]
-
 time_BodyGyroJerkMag_std|Average of the standard deviation of the time domain signal of the magnitude of the Jerk signal of the gyroscope|numeric|[-1:1]
-
 freq_BodyAcc_mean_X|Average of the mean of the frequency domain signal of the body acceleration in the x-axis direction|numeric|[-1:1]
-
 freq_BodyAcc_mean_Y|Average of the mean of the frequency domain signal of the body acceleration in the y-axis direction|numeric|[-1:1]
-
 freq_BodyAcc_mean_Z|Average of the mean of the frequency domain signal of the body acceleration in the z-axis direction|numeric|[-1:1]
-
 freq_BodyAcc_std_X|Average of the standard deviation of the frequency domain signal of the body acceleration in the x-axis direction|numeric|[-1:1]
-
 freq_BodyAcc_std_Y|Average of the standard deviation of the frequency domain signal of the body acceleration in the y-axis direction|numeric|[-1:1]
-
 freq_BodyAcc_std_Z|Average of the standard deviation of the frequency domain signal of the body acceleration in the z-axis direction|numeric|[-1:1]
-
 freq_BodyAcc_meanFreq_X|Average of the mean of the frequency domain signal of the body acceleration in the x-axis direction|numeric|[-1:1]
-
 freq_BodyAcc_meanFreq_Y|Average of the mean of the frequency domain signal of the body acceleration in the y-axis direction|numeric|[-1:1]
-
 freq_BodyAcc_meanFreq_Z|Average of the mean of the frequency domain signal of the body acceleration in the z-axis direction|numeric|[-1:1]
-
 freq_BodyAccJerk_mean_X|Average of the mean of the frequency domain signal of the Jerk signal of the body acceleration in the x-axis direction|numeric|[-1:1]
-
 freq_BodyAccJerk_mean_Y|Average of the mean of the frequency domain signal of the Jerk signal of the body acceleration in the y-axis direction|numeric|[-1:1]
-
 freq_BodyAccJerk_mean_Z|Average of the mean of the frequency domain signal of the Jerk signal of the body acceleration in the z-axis direction|numeric|[-1:1]
-
 freq_BodyAccJerk_std_X|Average of the standard deviation of the frequency domain signal of the Jerk signal of the body acceleration in the x-axis direction|numeric|[-1:1]
-
 freq_BodyAccJerk_std_Y|Average of the standard deviation of the frequency domain signal of the Jerk signal of the body acceleration in the y-axis direction|numeric|[-1:1]
-
 freq_BodyAccJerk_std_Z|Average of the standard deviation of the frequency domain signal of the Jerk signal of the body acceleration in the z-axis direction|numeric|[-1:1]
-
 freq_BodyAccJerk_meanFreq_X|Average of the mean of the frequency domain signal of the Jerk signal of the body acceleration in the x-axis direction|numeric|[-1:1]
-
 freq_BodyAccJerk_meanFreq_Y|Average of the mean of the frequency domain signal of the Jerk signal of the body acceleration in the y-axis direction|numeric|[-1:1]
-
 freq_BodyAccJerk_meanFreq_Z|Average of the mean of the frequency domain signal of the Jerk signal of the body acceleration in the z-axis direction|numeric|[-1:1]
-
 freq_BodyGyro_mean_X|Average of the mean of the frequency domain signal of the gyroscope in the x-axis direction|numeric|[-1:1]
-
 freq_BodyGyro_mean_Y|Average of the mean of the frequency domain signal of the gyroscope in the y-axis direction|numeric|[-1:1]
-
 freq_BodyGyro_mean_Z|Average of the mean of the frequency domain signal of the gyroscope in the z-axis direction|numeric|[-1:1]
-
 freq_BodyGyro_std_X|Average of the standard deviation of the frequency domain signal of the gyroscope in the x-axis direction|numeric|[-1:1]
-
 freq_BodyGyro_std_Y|Average of the standard deviation of the frequency domain signal of the gyroscope in the y-axis direction|numeric|[-1:1]
-
 freq_BodyGyro_std_Z|Average of the standard deviation of the frequency domain signal of the gyroscope in the z-axis direction|numeric|[-1:1]
-
 freq_BodyGyro_meanFreq_X|Average of the mean of the frequency domain signal of the gyroscope in the x-axis direction|numeric|[-1:1]
-
 freq_BodyGyro_meanFreq_Y|Average of the mean of the frequency domain signal of the gyroscope in the y-axis direction|numeric|[-1:1]
-
 freq_BodyGyro_meanFreq_Z|Average of the mean of the frequency domain signal of the gyroscope in the z-axis direction|numeric|[-1:1]
-
 freq_BodyAccMag_mean|Average of the mean of the frequency domain signal of the magnitude of the body acceleration|numeric|[-1:1]
-
 freq_BodyAccMag_std|Average of the standard deviation of the frequency domain signal of the magnitude of the body acceleration|numeric|[-1:1]
-
 freq_BodyAccMag_meanFreq|Average of the mean of the frequency domain signal of the magnitude of the body acceleration|numeric|[-1:1]
-
 freq_BodyAccJerkMag_mean|Average of the mean of the frequency domain signal of the magnitude of the Jerk signal of the body acceleration|numeric|[-1:1]
-
 freq_BodyAccJerkMag_std|Average of the standard deviation of the frequency domain signal of the magnitude of the Jerk signal of the body acceleration|numeric|[-1:1]
-
 freq_BodyAccJerkMag_meanFreq|Average of the mean of the frequency domain signal of the magnitude of the Jerk signal of the body acceleration|numeric|[-1:1]
-
 freq_BodyGyroMag_mean|Average of the mean of the frequency domain signal of the magnitude of the gyroscope|numeric|[-1:1]
-
 freq_BodyGyroMag_std|Average of the standard deviation of the frequency domain signal of the magnitude of the gyroscope|numeric|[-1:1]
-
 freq_BodyGyroMag_meanFreq|Average of the mean of the frequency domain signal of the magnitude of the gyroscope|numeric|[-1:1]
-
 freq_BodyGyroJerkMag_mean|Average of the mean of the frequency domain signal of the magnitude of the Jerk signal of the gyroscope|numeric|[-1:1]
-
 freq_BodyGyroJerkMag_std|Average of the standard deviation of the frequency domain signal of the magnitude of the Jerk signal of the gyroscope|numeric|[-1:1]
-
 freq_BodyGyroJerkMag_meanFreq|Average of the mean of the frequency domain signal of the magnitude of the Jerk signal of the gyroscope|numeric|[-1:1]
-
 angle_time_BodyAccMean_gravity|Average of the mean of the time domain signal of the body acceleration|numeric|[-1:1]
-
 angle_time_BodyAccJerkMean_gravityMean|Average of the mean of the time domain signal of the Jerk signal of the body acceleration|numeric|[-1:1]
-
 angle_time_BodyGyroMean_gravityMean|Average of the mean of the time domain signal of the gyroscope|numeric|[-1:1]
-
 angle_time_BodyGyroJerkMean_gravityMean|Average of the mean of the time domain signal of the Jerk signal of the gyroscope|numeric|[-1:1]
-
 angle_X_gravityMean|Average of the mean of in the x-axis direction|numeric|[-1:1]
-
 angle_Y_gravityMean|Average of the mean of in the y-axis direction|numeric|[-1:1]
-
 angle_Z_gravityMean|Average of the mean of in the z-axis direction|numeric|[-1:1]
