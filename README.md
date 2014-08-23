@@ -80,7 +80,8 @@ Step 5
     
         - Column 1 - Subject
         - Column 2: - Activity (descriptive text)
-        - Column 3:last - Average of the original mean and standard deviation data variables grouped by subject/activity
+        - Column 3:last - Average of the original mean and standard deviation data variables
+                        grouped by subject/activity
 ** Per the tidy data definition in "Tidy Data" papper by Hadley Wickham:
     http://vita.had.co.nz/papers/tidy-data.pdf"
 - As the aggregate function renames the first 2 columns used to group the data,
