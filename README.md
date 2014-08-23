@@ -19,14 +19,14 @@ Step 1
 - Once the zip file is transferred and saved as "Dataset.zip"" (or is already present),
     8 files are read to construct a working data frames for each one. Files accessed
     within Dataset.zip are:
-        - /UCI HAR Dataset/activity_labels.txt
-        - /UCI HAR Dataset/features.txt
-        - /UCI HAR Dataset/test/X_test.txt
-        - /UCI HAR Dataset/test/y_test.txt
-        - /UCI HAR Dataset/test/subject_test.txt
-        - /UCI HAR Dataset/train/X_train.txt
-        - /UCI HAR Dataset/train/y_train.txt
-        - /UCI HAR Dataset/train/subject_train.txt
+        * /UCI HAR Dataset/activity_labels.txt
+        * /UCI HAR Dataset/features.txt
+        * /UCI HAR Dataset/test/X_test.txt
+        * /UCI HAR Dataset/test/y_test.txt
+        * /UCI HAR Dataset/test/subject_test.txt
+        * /UCI HAR Dataset/train/X_train.txt
+        * /UCI HAR Dataset/train/y_train.txt
+        * /UCI HAR Dataset/train/subject_train.txt
 - The test and train working data frames are binded together by columns (subject,
     activity and data) and by rows (test and train) to create the main data set
     where subsequent data transformations will be performed in the next steps.
@@ -57,26 +57,26 @@ Step 4
     replacing any invalid characters with underscores). In order to make the names
     of the preserved columns (mean and standard deviation data) more readable and
     understandable, the following rules are applied:
-        - double or triple underscores are replaced with a single one
-        - ending underscores in column names are omitted
-        - "t(Body/Gravity)" is changed to "time_(Body/Gravity)"
-        - "f(Gravity)" is changed to "freq_(Gravity)"
-        - "BodyBody" is replaced to "Body"
+        * double or triple underscores are replaced with a single one
+        * ending underscores in column names are omitted
+        * "t(Body/Gravity)" is changed to "time_(Body/Gravity)"
+        * "f(Gravity)" is changed to "freq_(Gravity)"
+        * "BodyBody" is replaced to "Body"
 
 Step 5
 ======
 - The last step calculates the average for each subject/activity/data variable
     combination in the main data set using the aggregate function, with the following
     parameters:
-        - Main data set subsetted from column 3 to last (data variables)
-        - Grouped by column 1 and 2 ("Subject" and "Activity")
-        - Mean function (to calculate the average of each combination)
+        * Main data set subsetted from column 3 to last (data variables)
+        * Grouped by column 1 and 2 ("Subject" and "Activity")
+        * Mean function (to calculate the average of each combination)
 - The resulting data set with [# Subjects x # Activities] rows and the same number of
     columns as the main data set is assigned to a new data set, and it represents the
     final (not so narrow) tidy data set*, containing:
-        + Column 1 - Subject
-        + Column 2: - Activity (descriptive text)
-        + Column 3:last - Average of the original mean and standard deviation
+        * Column 1 - Subject
+        * Column 2: - Activity (descriptive text)
+        * Column 3:last - Average of the original mean and standard deviation
                             data variables grouped by subject/activity
 * Per the tidy data definition in "Tidy Data" papper by Hadley Wickham:
     http://vita.had.co.nz/papers/tidy-data.pdf"
