@@ -107,4 +107,5 @@ Step 5
 - As the aggregate function renames the first 2 columns used to group the data,
     "Subject" and "Activity" are reassigned as their respective column names
 - Finally, the resulting tidy data set is written in a flat file (suppressing the row
-    names) in the working directory, named "Summary.txt"
+    names and with comma-separated values) in the working directory, named
+    "Summary.txt"

@@ -107,6 +107,6 @@ run_analysis <- {
                                    names(main_dataset[3:length(names(main_dataset))]))
 
     outputfile <- "Summary.txt"
-    write.table(summary_dataset, outputfile, row.names=FALSE)
+    write.table(summary_dataset, outputfile, row.names=FALSE, sep=",")
     cat(paste("Analysis completed.\nResults are in",outputfile,"\n"))
 }
