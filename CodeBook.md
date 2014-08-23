@@ -1,5 +1,7 @@
 Code Book & Data Dictionary - Getting & Cleaning Data Course Project
 ====================================================================
+###### (V 1.0)
+###### Aug. 08, 2014
 
 |Column|Field Name|Description|Type|Range|
 |------|----------|-----------|----|-----|

@@ -1,5 +1,8 @@
 Getting & Cleaning Data Course Project
 ======================================
+###### (V 1.0)
+###### Aug. 08, 2014
+
 To perform the tasks for the Getting & Cleaning Data Course Project execute the
 run_analysis.R script provided in this directory.
 
