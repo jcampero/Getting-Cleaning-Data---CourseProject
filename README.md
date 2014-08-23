@@ -1,7 +1,7 @@
 Getting & Cleaning Data Course Project
 ======================================
 To perform the tasks for the Getting & Cleaning Data Course Project execute the
-the run_analysis.R script provided in this directory.
+run_analysis.R script provided in this directory.
 
 This script performs the following 5 main steps:
 
