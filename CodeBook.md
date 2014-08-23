@@ -3,7 +3,7 @@ Code Book & Data Dictionary - Getting & Cleaning Data Course Project
 ######                             V 1.00
 ######                          Aug. 08, 2014
 
-|Column|Field Name|Description|Type|Range|
+|Field Number|Field Name|Description|Type|Range|
 |------|----------|-----------|----|-----|
 |1|Subject|Id. of the person performing the experiment|integer|[1:30]|
 |2|Activity|Activity performed|factor|Walking, Walking Upstairs, Walking Downstairs, Sitting, Standing, Laying|
