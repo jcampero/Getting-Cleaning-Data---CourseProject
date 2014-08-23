@@ -1,4 +1,4 @@
-run_analysis <- function() {
+run_analysis <- {
     
 ## Getting & Cleaning Data Course Project
 ##
