@@ -4,7 +4,7 @@ Code Book & Data Dictionary - Getting & Cleaning Data Course Project
 |Column|Field Name|Description|Type|Range|
 |------|----------|-----------|----|-----|
 |1|Subject|Subject|integer|[1:30]|
-|2|Activity|Activity labels|factor|WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING|
+|2|Activity|Activity labels|factor|Walking, Walking_Upstairs, Walking_Downstairs, Sitting, Standing, Laying|
 |3|time_BodyAcc_mean_X|Mean of the time domain signal of the body acceleration in the x-axis direction|numeric|[-1:1]|
 4|time_BodyAcc_mean_Y|Mean of the time domain signal of the body acceleration in the y-axis direction|numeric|[-1:1]
 5|time_BodyAcc_mean_Z|Mean of the time domain signal of the body acceleration in the z-axis direction|numeric|[-1:1]
