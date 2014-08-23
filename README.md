@@ -6,22 +6,30 @@ Getting & Cleaning Data Course Project
 To perform the tasks for the Getting & Cleaning Data Course Project execute the
 run_analysis.R script provided in this directory.
 
+The script works with data generated in the Human Activity Recognition Using
+Smartphones Project, accessing the data set located in the following link:
+    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+If you would like to see a brief description of the Human Activity Recognition Using
+Smartphones Project and how the input data was generated, refer to the following link:
+    http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+The main prourpose of the script is to extract only the mean and standard deviation
+measures from the original data and calculate the average of those measures grouped
+by subject and activity.
+
 This script performs the following 5 main steps:
 
 Step 1
 ======
-- Access the Human Activity Recognition Using Smartphones Data Set from the following
-    link:
-    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-- If you would like to see a brief description of the Human Activity Recognition Using
-    Smartphones Project and how the input data was generated, refer to the following link:
-    http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+- Access the Human Activity Recognition Using Smartphones Data Set from the link
+    mentioned before
 - For time and network bandwidth efficiency, if the local working directory already
     contains a copy of the original data (stored in the ./data directory), the script
     doesn't download the file again and uses the local copy
-- Once the zip file is transferred and saved as "Dataset.zip"" (or is already present),
-    8 files are read to construct a working data frames for each one. Files accessed
-    within Dataset.zip are:
+- Once the zip file is transferred and saved as "Dataset.zip"" (or is already
+    present), 8 files are read to construct a working data frames for each one. Files
+    accessed within Dataset.zip are:
     
         - /UCI HAR Dataset/activity_labels.txt
         - /UCI HAR Dataset/features.txt
@@ -39,13 +47,18 @@ Step 2
 ======
 - Excluding the 1st and 2nd (subject and activity respectively), the rest of the
     columns in the main data set are renamed using values in the second column of the
-    features data frame (to avoid potential problems with the use of invalid characters
+    features data frame (to avoid potential problems with the use of invalid
+    characters
     in the column names, all invalid characters are replaced with underscores "_")
 - To only preserve columns that contains mean or standard deviation data, column names
     are searched for the presence of "Subject", "Activity" (1st and 2nd), "mean" or
     "std" to construct a logical data frame
+- As an exception to the previous rule, measures that contain "mean" or "std" but
+    begin with "angle" are also excluded, since they correspond to an angle()
+    measure instead.
 - The logical data frame is used to subset the main data frame and delete all the
-    columns that don't contain mean or standard deviation data (except the 1st and 2nd)
+    columns that don't contain mean or standard deviation data (except the 1st and
+    2nd)
     
 Step 3
 ======
@@ -83,8 +96,8 @@ Step 5
     
         - Column 1 - Subject
         - Column 2: - Activity (descriptive text)
-        - Column 3:last - Average of the original mean and standard deviation data variables
-                        grouped by subject/activity
+        - Column 3:last - Average of the original mean and standard deviation
+                        data variables grouped by subject/activity
 ** Per the tidy data definition in "Tidy Data" papper by Hadley Wickham:
     http://vita.had.co.nz/papers/tidy-data.pdf"
 - As the aggregate function renames the first 2 columns used to group the data,
